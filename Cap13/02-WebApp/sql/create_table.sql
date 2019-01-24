@@ -5,4 +5,4 @@ CREATE TABLE `appdb`.`tbl_user` (
   `user_password` VARCHAR(45) NULL,
   PRIMARY KEY (`user_id`));
 
-grant insert on tbl_user to appuser;
+grant insert on appdb.tbl_user to appuser;

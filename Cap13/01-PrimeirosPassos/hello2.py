@@ -1,21 +1,21 @@
 from flask import Flask
 app = Flask(__name__)
- 
+
 @app.route("/")
 def index():
-    return "Index!"
- 
+	return "Index!"
+
 @app.route("/hello")
 def hello():
-    return "Hello World!"
- 
+	return "Hello World!"
+
 @app.route("/members")
 def members():
-    return "Members"
- 
+	return "Members"
+
 @app.route("/members/<string:name>/")
 def getMember(name):
-    return name
- 
+	return name
+
 if __name__ == "__main__":
-    app.run()
+	app.run()
